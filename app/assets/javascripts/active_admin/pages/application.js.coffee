@@ -5,9 +5,9 @@
 
 $ ->
   # Date picker
-  $(".datepicker").datepicker dateFormat: "yy-mm-dd"
-  $(".clear_filters_btn").click ->
+  $("body.active_admin .datepicker").datepicker dateFormat: "yy-mm-dd"
+  $("body.active_admin .clear_filters_btn").click ->
     window.location.search = ""
     false
 
-  $(".dropdown_button").popover()
+  $("body.active_admin .dropdown_button").popover()
